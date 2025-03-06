@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 label_encoder = LabelEncoder()
 scaler = StandardScaler()
 
-model = pickle.load(open('churnmodel.pk','rb'))
+model = pickle.load(open('churnmodel.pkl','rb'))
 df = pd.read_csv("customer_churn.csv")
 
 st.title("customer Churn Prediction Using Logistic Regression for Classification")

@@ -7,7 +7,7 @@ import streamlit as st
 from PIL import Image
 
 
-df_titanic = pd.read_csv("titanic.csv")
+df_titanic = pd.read_csv("Titanic-Dataset.csv")
 df_titanic.head()
 df_titanic.drop('Cabin',axis=1,inplace=True)
 df_titanic.dropna(inplace=True)
